@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: white;
+    flex-direction: column;
+    margin-right: 10mm;
+}
+
+.Heading{
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    color: rgb(243, 7, 7);
+    display: flex;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Header{
+    width: 100%;
+    overflow: hidden;
+    background-color: #ff4c24e2;
+    align-items: center;
+}
+
+.Header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.Header a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.Header-right{
+    float: right;
+}
+
+.footer{
+    align-items: end;
+
+}
+
+.club_center{
+    position: relative;
+    left: 33px;
+    font-weight: bold;
+    text-align: center;
+}
+
+img{
+    border: 0.5mm solid black;
+    border-width: 1mm;
+}
+
+.content{
+    position: relative;
+    text-align: left;
+    margin-left: 10mm;
+}
+
+.Blood_brop{
+    position: relative;
+    padding: 0;
+    background-color: red;
+    right: 0;
+    left: 0;
+    top: 40%;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 30px 50px black;
+    border-radius: 0% 100% 100% 100%;
+    -webkit-transform: rotate(45deg);
+    clear: left;
+    -webkit-animation: animate 3s infinite;
+    text-align: center;
+}
+
+.coutes{
+    -webkit-transform: rotate(-45deg);
+    text-align-last: center;
+    padding: 29px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+h1{
+    position: relative;
+    align-items: center;
+}
+
+.club_center {
+    transition: transform .2s;
+    width: 450px;
+    margin: 0 auto;
+  }
+  
+  .club_center:hover {
+    transform: scale(1.5); 
+  }
+
+  

@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+.h1{
+    color: rgb(163, 70, 70);
+    text-shadow: 2px 2px 4px #874;
+}
+.h2{
+    color: rgb(171, 103, 103);
+    text-shadow: 2px 2px 4px rgb(174, 146, 64);
+}
+.txt{
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 50px;
+}
+.for table{
+    width: 60%;
+    height: 500px;
+    left: 20px;
+    right: 20px;
+    padding:10px;
+    font-size: 35px;
+    box-shadow: inset;
+    background-image: linear-gradient(to bottom right,rgb(247, 184, 184), rgb(250, 250, 177));
+    box-shadow: 10px 10px 5px 12px rgb(13, 33, 40);
+}
+.image{
+    align-items: center;
+    margin-left: 190mm;
+}
+
+.Header{
+    width: 100%;
+    overflow: hidden;
+    background-color: #ff4c24e2;
+    align-items: center;
+}
+
+.Header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.Header a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.Header-right{
+    float: right;
+}

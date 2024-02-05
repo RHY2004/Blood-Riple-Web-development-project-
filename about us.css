@@ -1,0 +1,110 @@
+body{
+    position: relative;
+    align-items: center;
+    content: center;
+    border: 10px ridge  #100220;
+    background-color: rgb(203, 182, 157);
+    padding: 2%;
+}
+.img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 15% 100%;
+  }
+.about{
+    width: 50%;
+    height: 500px;
+    padding:10px;
+    font-size: 35px;
+    box-shadow: 20px 30px 5px;
+    background-image: linear-gradient(to bottom right,red, yellow);
+    border-radius: 25px;
+    
+}
+
+.mission{
+    width: 47.5%;
+    height: 50%;
+    padding: 10px;
+    position: relative;
+    left: 51%;
+    right: 0px;
+    font-size: 35px;
+    box-shadow: 20px 20px 5px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 25px;
+
+}
+
+.who{
+    width: 51%;
+    height: 50%;
+    padding:10px;
+    font-size: 35px;
+    box-shadow: 20px 20px 5px ;
+    background-image: linear-gradient(to bottom right,red, yellow);
+    border-radius: 25px;
+}
+
+.drives{
+    width: 47.5%;
+    height: 50%;
+    padding: 10px;
+    position: relative;
+    left: 51%;
+    right: 0px;
+    font-size: 35px;
+    box-shadow: 20px 30px 5px ;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 25px;
+}
+
+.commit{
+    width: 51%;
+    height: 50%;
+    padding:10px;
+    font-size: 35px;
+    box-shadow: 20px 30px 5px ;
+    background-image: linear-gradient(to bottom right,red, yellow);
+    border-radius: 25px;
+}
+
+.journey{
+    width: 47.5%;
+    height: 50%;
+    padding: 10px;
+    position: relative;
+    left: 51%;
+    right: 0px;
+    font-size: 35px;
+    box-shadow: 20px 30px 5px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 25px;
+}
+
+.Header{
+    width: 100%;
+    overflow: hidden;
+    background-color: #ff4c24e2;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.Header a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.Header-right{
+    float: right;
+}

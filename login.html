@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signi/signup page</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="Header">
+        <a href="homepage.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="search.html">Search</a>
+        <a href="about us.html">About Us</a>
+      </div><br><br>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form action="/">
+
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="txt" name="txt" placeholder="User Name" required="">
+
+                <input type="email" name="email" id="" placeholder="Email" required="">
+                <input type="password" name="pswd" id="" placeholder="Password" required="">
+                <input type="password" name="pswd" id="" placeholder="Confirm Password" required="">
+                <button>Sign Up</button>
+                <label for="chk" aria-hidden="true">Click to Login</label>
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="/">
+            <label for="chk" aria-hidden="true">Login</label>
+            <input type="email" name="email" id="" placeholder="Email or user name" required="">
+            <input type="password" name="pswd" id="" placeholder="password" required="">
+            <button>Login</button>
+            <p>Don't have account <a href="#">Create account</a>.</p>
+        </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Get the form data
+            const username = document.getElementById('signup-username').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+            const confirmPassword = document.getElementById('signup-confirm-password').value;
+            
+            // You can validate the form data here before sending it to the server
+            
+            // Send a POST request to the backend server
+            fetch('/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, email, password, confirmPassword })
+            })
+            .then(response => {
+                if (response.ok) {
+                    // If signup is successful, display a success message or redirect to another page
+                    console.log('Signup successful!');
+                } else {
+                    // If signup fails, display an error message
+                    console.error('Signup failed:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Get the form data
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+            
+            // Send a POST request to the backend server
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => {
+                if (response.ok) {
+                    // If login is successful, display a success message or redirect to another page
+                    console.log('Login successful!');
+                } else {
+                    // If login fails, display an error message
+                    console.error('Login failed:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

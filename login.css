@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: #f6f5f7;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.main{
+    width: 350px;
+    height: 480px;
+    background: #ff4144;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 30px 50px black;
+}
+
+#chk{
+    display: none;
+}
+
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    color: #f6f5f7;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 60%;
+    height: 20px;
+    background: #f6f5f7;
+    justify-content: center;
+    display: flex;
+    margin: 18px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: white;
+    background: #ff4b24;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 18px;
+    outline: none;
+    border: 1px solid #ff4b24;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+    box-shadow: 5px 20px 40px black;
+}
+
+button:hover{
+    background: #ff4b24;
+}
+
+button:active {
+    transform: scale(0.95);
+  }
+
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transition: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label{
+    color: #ff4b24;
+    transform: scale(.6);
+}
+
+.login p{
+    text-align: center;
+    padding: 20px;
+}
+
+#chk:checked ~ .login {
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ .login label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}  
+
+.Header{
+    width: 341px;
+    overflow: hidden;
+    background-color: #ff4b24;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.Header a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+.Header-right{
+    float: right;
+}
